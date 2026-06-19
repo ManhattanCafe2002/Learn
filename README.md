@@ -1,2 +1,29 @@
 # Learn
-Week_1
+This is my first github repo
+I use this repo to record my learning notes
+
+Week 1
+Day 1 
+I learned how to install the Ubuntu alongside the windows system.
+Then I created my first github repo, and edited it first time.
+Claude told me wrong information, I wasted a hour to try creating a UEFI area.
+But in the end, I realized that Ubuntu 24.04 creats UEFI area by herself.
+
+Day 2
+Trying install extensions on my VScode. 
+I installed python, C++ extention pack, ruff, GitLens, ErrorLens and CodRunner.
+ofcourse, Claude Code.
+Tried to fix some problem of ubuntu system, such as can not relight the monitor after the system turns in to
+sleep mode
+  sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
+is useless.
+just turn off the screen blank in Power settings.
+
+Day 3 - Day 4
+I got some code of the C Primer Plus from the github because I wanted to finish this book first.
+Found the cmd to fix the time error that happens everytimes when I switch between Ubuntu and Windows:
+  timedatectl set-local-rtc 1 --adjust-system-clock
+I learned how to use C's struct, half of the chapt 14 of the textbook.
+
+Day 5
+Learning how to use github, created my sshkey, even I dont know what is ssh.
