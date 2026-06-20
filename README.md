@@ -27,3 +27,23 @@ I learned how to use C's struct, half of the chapt 14 of the textbook.
 
 Day 5
 Learning how to use github, created my first SSH key, even though I dont know what is ssh.
+
+Day 6
+Learned how to use struct, function ptr and bitwise operation.
+dualview.c is difficult to learn.
+struct box {
+  unsigned int a            : 2;
+  unsigned int b            : 2;
+  unsigned int              : 4;
+  };
+  
+ (1001)>> 2    (0010) or (1110) 
+ (1001)<< 2    (0100)
+ ~ invert
+ & and 
+ | or
+ ^ XOR
+
+Set a bit |=(1<<n)
+Clear a bit &=~(1<<n)
+Check a bit &(1<<n)
