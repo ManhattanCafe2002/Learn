@@ -47,3 +47,4 @@ struct box {
 Set a bit |=(1<<n)
 Clear a bit &=~(1<<n)
 Check a bit &(1<<n)
+toggle a bit ^=(1<<n)
