@@ -55,4 +55,5 @@ Practiced bitwise operating. Wrote a program: practice.c.
 Tried to use commit, rebase and gitlens.
 rotate function is a little difficult.
 It's must to consider the situation that rotate bits are longer than the size of the data.
- 
+GitLens practice;
+Source Control;
