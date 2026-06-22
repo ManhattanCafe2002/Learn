@@ -57,3 +57,14 @@ rotate function is a little difficult.
 It's must to consider the situation that rotate bits are longer than the size of the data.
 GitLens practice;
 Source Control;
+
+Week 2
+
+Day 1
+Ch 16 useheader
+I cant build useheader.c which have to link the name_str.c
+I dont want to edit task.json because that will make other .c file fail to build.
+In the end, I write a "Makefile" file(or "makefile", No "MakeFile")
+dont foget the "Tab"!
+Then use the command:
+make && ./useheader
