@@ -68,3 +68,18 @@ In the end, I write a "Makefile" file(or "makefile", No "MakeFile")
 dont foget the "Tab"!
 Then use the command:
 make && ./useheader
+
+Day 2 -Day 7
+Its a little busy this week, but I tried to finish C primer plus. 
+Binary tree is amazing.
+But I realized that I can't master every code in the  program. 
+Whatever, in this stage, the array is always good.
+The best part is that I learned how to use abstraction and header.
+
+Week 3
+
+Day 1
+C++ is started.
+I write my first C++ program and push it to my github.
+
+
