@@ -81,5 +81,6 @@ Week 3
 Day 1
 C++ is started.
 I write my first C++ program and push it to my github.
+There is some trouble with my VS code's push function.
 
 
