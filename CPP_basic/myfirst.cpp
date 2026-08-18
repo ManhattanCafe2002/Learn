@@ -17,10 +17,11 @@ int main()
     cout << "today is the day";
     cin >> day;
     cout <<"day"<< multiple2(day) <<" is a good day."<< endl;
-    cin.get();                // wait for user to press enter
+    cin.get();           
+    cin.get();       // wait for user to press enter
     return 0;               // as same as c       
 }
-double mutiple2(double x)
+double multiple2(double x)
 {
     return x * 2;
 }
