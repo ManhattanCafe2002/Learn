@@ -4,7 +4,7 @@ class Vector
 {
     private:
         double* elem;
-        int sz;
+        const int sz;
     public:
         //constructor
         // elem gets a new array of doubles of size s, then gives s to sz
