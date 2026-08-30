@@ -4,7 +4,7 @@ double multiple2(double);
 
 int main()
 {
-    using namespace std;    //make difination of cout and endl available
+    using namespace std;    //make definition of cout and endl available
     //OR
     //using std::cout;
     //using std::endl;
