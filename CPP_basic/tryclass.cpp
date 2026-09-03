@@ -1,17 +1,29 @@
 #include<iostream>
+#include<stdexcept>
 
 class Vector
 {
     private:
         double* elem;
-        const int sz;
+        int sz;
     public:
         //constructor
         // elem gets a new array of doubles of size s, then gives s to sz
-        Vector(int s) :elem{new double[s]}, sz{s} {}
+        Vector(int s)
+        {
+            if(s<0)
+                throw std::length_error{"Vector constructor: negative size"};
+            elem=new double[s];
+            sz=s;
+        }
         //return the ith element of the array
       
-        double& operator[](int i){ return elem[i];} 
+        double& operator[](int i)
+        {
+            if(i<0 || i>=sz)
+                throw std:: out_of_range{"Vector::operator[]"};
+            return elem[i];
+        } 
         //means that the operator[] returns a reference to the ith
         //element of the array elem. 
         //This allows you to access and modify the elements 
@@ -60,3 +72,16 @@ Traffic_light& operator++(Traffic_light& t)
     }
 }
 Traffic_light next = ++light; // This will change light from red to green, and next will also be green.
+
+static_assert(4<=sizeof(int),"integers are too small, what are you using?");
+
+
+constexpr double C = 299792.458;   // km/s
+
+void f(double speed)
+{
+    double speed;
+    constexpr double local_max = 160.0 / (60 * 60);   // km/h to km/s
+    //static_assert(speed < C, "can't go that fast");   //compile-time error: speed is not a constant expression
+    static_assert(local_max < C, "can't go that fast"); // OK
+}
