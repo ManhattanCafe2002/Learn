@@ -15,8 +15,15 @@ class Vector
                 throw std::length_error{"Vector constructor: negative size"};
             elem=new double[s];
             sz=s;
+            for(int i=0; i!=s;++i)
+                elem[i]=0;
         }
         //return the ith element of the array
+        Vector(std::initializer_list<double>);//constructor that takes an initializer list
+        void push_back(double);
+
+
+        ~Vector(){delete[] elem;}//destructor
       
         double& operator[](int i)
         {
@@ -43,6 +50,36 @@ class Vector
 
 
 //double& operator[](int i){ return elem[i];}
+
+// abstract class Container with pure virtual functions
+class Container
+{
+    public:
+        virtual double& operator[](int)=0;   
+        //=0 mains pure virtual function, 
+        //which means that the derived classes must provide an implementation 
+        //for this function.
+        virtual int size()const=0;
+        virtual ~Container(){}
+};
+
+void use(Container& c)
+{
+    const int sz =c.size();
+    for(int i=0; i!=sz; ++i)
+        std::cout<<c[i]<<'\n';
+}
+
+class Vector_container: public Container
+{
+    private:
+        Vector v;
+    public:
+        Vector_container(int s):v(s){}
+        double& operator[](int i) override {return v[i];}
+        int size() const override {return v.size();}
+        ~Vector_container() override {}
+};
 
 union Value
 {
